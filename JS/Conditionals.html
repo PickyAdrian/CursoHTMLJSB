@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Conditional statements</title>
+    </head>
+
+    <body>
+        <p id="demo"> </p>
+        <p id="demo2"> </p>
+
+        <script type="text/javascript">
+
+            var score=150;
+            if(score<=50){
+                document.write("F");
+            }
+            else if(score<70){
+                document.write("D");
+            } else if(score <80){
+                document.write("C");
+            } else if(score <90){
+                document.write("B");
+            } else if (score<100){
+                document.write("A");
+            }else{
+                document.write("Score deberia ser menos de 100");
+            }
+
+
+            var x=6;
+            document.getElementById("demo").innerHTML=(x==8);
+
+            var b1=Boolean(80);
+            var b2=Boolean(2.86);
+            var b3=Boolean(-10);
+            var b4=Boolean("Hi");
+            var b5=Boolean('false');
+            var b6=Boolean(1+8+10.14);
+            var b7=Boolean(0);
+            document.getElementById("demo2").innerHTML=
+            "80 is " + b1 + "<br>" +
+            "2.86 is " + b2 + "<br>" + 
+            "-10 is " + b3 + "<br>" + 
+            "Any (not empty) string is " + b4+ "<br>" +
+            "The string 'false' is " + b5 + "<br>" + 
+            "Any expression (except zero) is " + b6 + "<br>" +
+            "Zero is  " + b7 + "<br>"
+
+
+        </script>
+
+    </body>
+</html>

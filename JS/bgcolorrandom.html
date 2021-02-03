@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <title>JavaScript exercise</title>
+    </head>
+
+    <body>
+        <script>
+            function bgcolor(){
+            var bgcolor=new Array("#9ec600", "#a571ac", "#e9f1ac", "#a72eac", "#554823", "#b8a723", "#b2c0da", "#0f98f8");
+            document.body.style.background=bgcolor[Math.floor(Math.random()*bgcolor.length)];
+            }
+
+        </script>  
+        <button onclick="bgcolor()">Pulsame para cambiar de color el fondo </button>
+    </body>
+</html>
